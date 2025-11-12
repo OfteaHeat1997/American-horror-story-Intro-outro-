@@ -154,7 +154,15 @@ This was a school assignment with specific rules:
 
 ## 📸 Screenshots
 
-*Coming soon - Horror scenes preview*
+### Loading Screen
+![Loading Screen](screenshots/intro%20screen%201.png)
+
+### Horror Scenes
+![Horror Scene 1](screenshots/intro%20screen%202.png)
+
+![Horror Scene 2](screenshots/intro%20screen%203.png)
+
+![Horror Scene 3](screenshots/intro%20screen%204.png)
 
 ## 💭 Feedback Welcome
 
