@@ -1,95 +1,296 @@
-# Recreate A Intro Outro
+# Recreate A Movie/TV/Game Intro - Learning Project
 
-Recreate (part of) an intro/outro of a movie, tv-series or  game using only vanilla HTML/CSS/JavaScript.
-It must (at least) work in Chrome/Brave on a desktop resolution (preferably 1920x1080).
+## Student Learning Challenge - S3 CB
 
+This is a student-level project where I'm learning to recreate intro/outro sequences from movies, TV series, or games using **only vanilla HTML, CSS, and JavaScript** (no frameworks or libraries).
 
+---
 
-## Getting started
+## What is This Challenge?
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+**Recreate part of an intro or outro** from a movie, TV series, or game using only vanilla HTML, CSS, and JavaScript.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+### Requirements:
+- **No frameworks** (no React, Vue, Angular, etc.)
+- **No external libraries** (no jQuery, GSAP, etc.)
+- **No copy-paste modules**
+- Must work on **desktop** (Chrome/Brave browser)
+- Target resolution: **1920x1080**
+- Use your own imagination and vanilla techniques
 
-## Add your files
+### Deadline:
+Submit before next Thursday in the Canvas assignment (link or zip file)
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+---
+
+## My Project: American Horror Story Intro
+
+I chose to recreate the **American Horror Story** intro sequence!
+
+### Watch the Original:
+[American Horror Story Intro on YouTube](https://www.youtube.com/watch?v=ScY179qa5pM)
+
+---
+
+## What I'm Learning
+
+This project is teaching me fundamental web development skills:
+
+### HTML (Structure)
+- Semantic HTML5 elements
+- Organizing content with divs and sections
+- Using data attributes for JavaScript manipulation
+- Proper document structure and metadata
+- Linking external resources (CSS, JavaScript, fonts, audio)
+
+### CSS (Styling & Animation)
+- CSS Reset with universal selector (`*`)
+- Flexbox for centering and layout
+- Positioning (fixed, absolute, relative)
+- CSS Animations with `@keyframes`
+- CSS Transforms (scale, rotate, translate)
+- CSS Transitions for smooth effects
+- Opacity and visibility control
+- Custom fonts integration
+- Gradient backgrounds
+- Box-shadow effects
+- Pseudo-elements (::before, ::after)
+- Animation timing functions (ease, linear, cubic-bezier)
+
+### JavaScript (Interactivity)
+- DOM manipulation (querySelector, querySelectorAll)
+- Event listeners (click events)
+- Web Audio API (playing background music)
+- Timer functions (setInterval)
+- Array iteration and loops
+- Function declarations
+- Controlling CSS display properties via JavaScript
+- Class manipulation (add/remove classes)
+
+---
+
+## Project Structure
 
 ```
-cd existing_repo
-git remote add origin https://git.fhict.nl/I451089/recreate-a-intro-outro.git
-git branch -M main
-git push -uf origin main
+recreate-a-intro-outro/
+├── AHS/                          # My American Horror Story project
+│   ├── index.html                # Main HTML file
+│   ├── CSS/
+│   │   └── style.css             # All styling and animations
+│   ├── javascript/
+│   │   └── javascript.js         # Interactive functionality
+│   ├── images/                   # Image assets
+│   │   ├── Intro-names/          # Intro slideshow images
+│   │   ├── cut-scene/            # Scene transition images
+│   │   ├── name-of-cast/         # Cast name overlays
+│   │   └── toma/                 # Additional scenes
+│   └── audio/                    # Background music
+├── README.md                     # This file - project overview
+├── LEARNING.md                   # Detailed explanations of techniques
+└── RESOURCES.md                  # Links and helpful resources
 ```
 
-## Integrate with your tools
+---
 
-- [ ] [Set up project integrations](https://git.fhict.nl/I451089/recreate-a-intro-outro/-/settings/integrations)
+## Features I Implemented
 
-## Collaborate with your team
+### 1. **Loading Screen**
+- Custom loading animation with progress bar
+- Text effects with shadows and glows
+- Loading bar that fills up over 5 seconds
+- Animated "START" button with hover effects
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+### 2. **Intro Slideshow (Before Main Intro)**
+- Rotating background images
+- Distorted animation effect (rotation + scale)
+- Automatic image transitions
 
-## Test and Deploy
+### 3. **Main Intro Sequence**
+- Scene-by-scene slideshow
+- Zoom in/out animations
+- Flashing/flickering effects (like the original)
+- Cast name overlays
+- Synchronized with background audio
 
-Use the built-in continuous integration in GitLab.
+### 4. **Audio Integration**
+- Web Audio API to play background music
+- Audio starts when user clicks "START"
+- Synced with visual animations
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+### 5. **Button Animations**
+- Custom hover effects
+- Rotating border animations
+- Smooth transitions
 
-***
+---
 
-# Editing this README
+## Techniques I Used
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!).  Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
+### CSS Animations
+- `@keyframes` for defining animation sequences
+- `animation` property for applying animations
+- Multiple animations: distorted, zoom-in-out, flashing, loading, line-top, line-bottom
+- Animation timing: `ease`, `linear`, `ease-in-out`, `cubic-bezier()`
+- `animation-duration`, `animation-delay`, `animation-iteration-count`
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+### CSS Transforms
+- `transform: translate()` - Moving elements
+- `transform: scale()` - Zooming effects
+- `transform: rotate()` - Rotation effects
+- Combining multiple transforms
 
-## Name
-Choose a self-explaining name for your project.
+### Positioning Techniques
+- `position: fixed` - For overlay elements (header, loading screen)
+- `position: absolute` - For precise element placement
+- `position: relative` - For parent containers
+- Centering with `top: 50%; left: 50%; transform: translate(-50%, -50%)`
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+### Flexbox Layout
+- `display: flex`
+- `justify-content: center` / `align-items: center`
+- `flex-direction: column`
+- Centering content vertically and horizontally
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+### JavaScript DOM Manipulation
+- Selecting elements: `querySelector()`, `querySelectorAll()`
+- Changing styles: `element.style.display`
+- Adding/removing classes: `classList.add()`, `classList.remove()`
+- Event handling: `addEventListener()`
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+### Web Audio API
+- Creating audio objects: `new Audio()`
+- Playing audio: `audio.play()`
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+---
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+## How to Run My Project
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+1. **Clone or download this repository**
+2. **Navigate to the AHS folder**
+3. **Open `index.html` in Chrome or Brave browser**
+4. **Click the "START" button** to begin the intro sequence
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+**Note:** For best experience, view in fullscreen (F11) at 1920x1080 resolution
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+---
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+## Why This Project is Good for Learning
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+### Portfolio Value
+- Shows ability to recreate complex animations
+- Demonstrates understanding of timing and sequencing
+- Shows creativity and attention to detail
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+### Skill Development
+- **CSS Mastery:** Animations, transforms, positioning
+- **JavaScript Fundamentals:** DOM manipulation, events, timing
+- **Problem-solving:** Figuring out how to recreate effects without libraries
+- **Attention to Detail:** Matching timing and feel of original
 
-## License
-For open source projects, say how it is licensed.
+### Real-world Applications
+- Landing pages with animations
+- Interactive storytelling websites
+- Product showcase pages
+- Portfolio websites with engaging intros
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+---
+
+## Resources I Used
+
+### Fonts
+- [CDN Fonts - American Horror Story Font](https://fonts.cdnfonts.com/css/american-horror-story)
+
+### Assets
+- Images: Collected from various free sources
+- Audio: Background music from the show
+
+### Learning Resources
+- MDN Web Docs (for CSS, JavaScript references)
+- CSS-Tricks (for animation techniques)
+- Web Audio API documentation
+
+---
+
+## Next Steps / Future Improvements
+
+- [ ] Add more scenes from the intro
+- [ ] Fine-tune timing to match original exactly
+- [ ] Add more visual effects (grain, noise, distortion)
+- [ ] Optimize images for faster loading
+- [ ] Add fallbacks for different screen sizes
+- [ ] Experiment with CSS filters (blur, grayscale)
+- [ ] Add text animations for credits
+
+---
+
+## What I Learned So Far
+
+1. **CSS animations are powerful** - You can create complex effects without JavaScript
+2. **Timing is everything** - Matching animations to audio is tricky
+3. **Organization matters** - Keeping files structured makes development easier
+4. **Browser compatibility** - Testing in target browser (Chrome) is important
+5. **Vanilla JavaScript is capable** - Don't always need libraries for simple interactions
+
+---
+
+## Allowed Resources for This Challenge
+
+### Fonts
+- [DaFont](https://www.dafont.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [Font Squirrel](https://www.fontsquirrel.com/)
+
+### Music/Sound Effects
+- [Bensound](https://www.bensound.com/)
+- [FreeSound](https://freesound.org/)
+- [FreeSFX](https://www.freesfx.co.uk/)
+
+### Images/Textures
+- [Pexels](https://www.pexels.com/)
+- [Textures.com](https://www.textures.com/)
+
+### Icons
+- [Flaticon](https://www.flaticon.com/)
+- [Iconfinder](https://www.iconfinder.com/)
+
+### Tools
+- [MP3 Cutter](https://mp3cut.net/)
+- [CSS Gradient Generator](https://cssgradient.io/)
+- [CSS Text Shadow Generator](https://css3gen.com/text-shadow/)
+
+---
+
+## Examples for Inspiration
+
+### TV Series Ideas:
+- **Arrested Development** - Moving screens/animations
+- **Better Call Saul** - Blurs, grunge, blinking text
+- **Breaking Bad** - Periodic table names
+
+### Movie Ideas:
+- **Star Wars** - Angled crawl text
+- **Jerry Bruckheimer** - Lightning effects
+
+### Game Ideas:
+- **Fallout** - Black-and-white, old TV look, on-screen text
+
+---
+
+## Documentation Files
+
+- **README.md** (this file) - Project overview and challenge description
+- **LEARNING.md** - Detailed explanations of every technique I'm using
+- **RESOURCES.md** - Helpful links, tutorials, and code examples
+
+---
+
+## Contact & Acknowledgments
+
+**Student Project** - Learning web development fundamentals through practical application
+
+**Original Content:** American Horror Story belongs to FX Networks
+**Educational Purpose:** This is a student project for learning purposes only
+
+---
+
+**Happy Coding!**
