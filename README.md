@@ -6,6 +6,14 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
+## 🎬 [**LIVE DEMO - Click to Experience the Intro!**](https://ofteaheat1997.github.io/American-horror-story-Intro-outro-/)
+
+**👉 [https://ofteaheat1997.github.io/American-horror-story-Intro-outro-/](https://ofteaheat1997.github.io/American-horror-story-Intro-outro-/)**
+
+> Click START INTRO to begin • Press R to reset • Use Space to start from loading screen
+
+---
+
 ## 📖 About This Project
 
 This is a **student learning project** where I recreated the American Horror Story: Hotel intro sequence. I built everything from scratch using vanilla HTML, CSS, and JavaScript - no frameworks or libraries allowed!
@@ -55,9 +63,10 @@ This is a **student learning project** where I recreated the American Horror Sto
 - Array iteration
 - Function declarations and callbacks
 
-## 🚀 Live Demo
+## 🚀 Links
 
-**[View Project →](https://github.com/OfteaHeat1997/American-horror-story-Intro-outro-)**
+- **[Live Demo](https://ofteaheat1997.github.io/American-horror-story-Intro-outro/)** - Experience the intro
+- **[Source Code](https://github.com/OfteaHeat1997/American-horror-story-Intro-outro-)** - View on GitHub
 
 ## 📂 Project Structure
 
